@@ -1,0 +1,222 @@
+.nav-bar {
+	background: linear-gradient(to right,#e1e1e1cc,#f8f8f842);
+	position: relative;
+	width: 250px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.menu-list {
+	display: flex;
+	flex-direction: column;    
+    align-items: center;
+    margin: 16px 0;
+}
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.group1,
+.group2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.group1 {
+    margin-bottom: 16px;
+}
+
+.group1 button.button-small:first-child,
+.group2 button.button-small:first-child {
+    margin-right: 16px;
+}
+
+button.button-full {
+    background-color: #f4f4f4b5;
+    border: none;
+    border-radius: 4px;
+    width: 216px;
+    height: 64px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	font-family: 'Raleway' ,sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+button.button-small {
+	background-color: #f4f4f4b5;
+	border: none;
+	border-radius: 4px;
+	width: 100px;
+	height: 96px;
+	cursor: pointer;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+button.button-small .fa {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+button.button-small:hover,
+button.button-full:hover {
+    transform: scale(1.1) perspective(1px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button.button-full.all {
+	margin-bottom: 16px;
+}
+
+button.button-full.eliminar {
+	margin-top: 16px;
+}
+
+/* Botón ver todo */
+button.button-full.all,
+.fa.fa-file-o {
+	color: #23cf0b
+}
+
+button.button-full.all:hover,
+button.button-full.all:hover .fa.fa-file-o {
+	color: #199d07
+}
+
+button.button-full.all.active,
+button.button-full.all.active .fa.fa-file-o {
+	background: #23cf0b;
+    color: #fff;
+}
+
+/* Botones small Carpetas + Texto rico */
+button.button-small.folder,
+button.button-small.rico {
+	color: #faac1e;
+    font-family: 'Raleway' ,sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.fa.fa-folder-o,
+.fa.fa-file-pdf-o {
+	color: #faac1e
+}
+
+button.button-small.folder:hover,
+button.button-small.rico:hover,
+button.button-small:hover .fa.fa-folder-o,
+button.button-small:hover .fa.fa-file-pdf-o {
+	color: #b87803
+}
+
+button.button-small.folder.active,
+button.button-small.rico.active,
+button.button-small.active .fa.fa-folder-o,
+button.button-small.active .fa.fa-file-pdf-o {
+	background: #faac1e;
+    color: #fff;
+}
+
+/* Botones small Imágenes + Texto plano */
+button.button-small.image,
+button.button-small.plano {
+	color: #d0cc05;
+    font-family: 'Raleway' ,sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.fa.fa-picture-o,
+.fa.fa-file-text-o {
+	color: #d0cc05
+}
+
+button.button-small.image:hover,
+button.button-small.plano:hover,
+button.button-small:hover .fa.fa-picture-o,
+button.button-small:hover .fa.fa-file-text-o {
+	color: #b3b004
+}
+
+button.button-small.image.active,
+button.button-small.plano.active,
+button.button-small.active .fa.fa-picture-o,
+button.button-small.active .fa.fa-file-text-o {
+	background: #d0cc05;
+    color: #fff;
+}
+
+/* Botón eliminar */
+button.button-full.eliminar,
+.fa.fa-trash {
+	color: #f70c0c
+}
+
+button.button-full.eliminar:hover,
+button.button-full.eliminar:hover .fa.fa-trash {
+	color: #cf0b0c
+}
+
+button.button-full.eliminar.active,
+button.button-full.eliminar.active .fa.fa-trash {
+	background: #f70c0c;
+    color: #fff;
+}
+
+/* Botón inferior */
+.nav-bar .button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;;
+}
+
+.nav-bar .button > button {
+	background: #46a5f8;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	padding: 16px 72px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-bar .button > button:hover {
+    background-color: #3f8dd1;
+}
+
+.nav-bar .button > button:active {
+    background-color: #3476af;
+}
+
+.nav-bar .button > button .fa.fa-plus {
+	margin-left: 8px;
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.nav-bar .fa.fa-file-o,
+.nav-bar .fa.fa-trash {
+	font-size: 16px;
+	height: 16px;
+	width: 16px;
+	margin-right: 8px;
+}

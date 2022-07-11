@@ -1,0 +1,28 @@
+.main-content {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.files-delete {
+    position: relative;
+    padding: 0 16px;
+    margin-top: 16px;
+}
+
+.files-delete .title {
+	font-weight: bolder;
+	font-family: 'Raleway',sans-serif;
+	font-size: 24px;
+    margin-bottom: 36px;
+    width: 100%;
+    cursor: default;
+    text-align: center;
+}
+
+.button-delete {
+    width: 100%;
+	height: 24px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}

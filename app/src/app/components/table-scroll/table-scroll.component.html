@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th class="col1">
+                <input type="checkbox" id="cbox1" value="first_checkbox"> 
+            </th>
+            <th class="col2">{{name}}</th>
+            <th class="col3">{{type}}</th>
+            <th class="col4">{{size}}</th>
+            <th class="col5">{{detail}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td class="col1">
+                <input type="checkbox" id="cbox1" value="first_checkbox"> 
+            </td>
+            <td class="col2">{{item.name}}</td>
+            <td class="col3">{{item.type}}</td>
+            <td class="col4">{{item.size}}</td>
+            <td class="col5">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>

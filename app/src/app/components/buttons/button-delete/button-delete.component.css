@@ -1,0 +1,25 @@
+button {
+	width: 176px;
+	height: 48px;
+	color: #f70c0c;
+	background: #fff;
+	border: none;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+button:hover {
+	color: #cf0b0c;
+}
+
+button:active,
+button.active {
+	color: #f70c0c;
+}
+
+button .fa.fa-trash {
+	font-size: 24px;
+}

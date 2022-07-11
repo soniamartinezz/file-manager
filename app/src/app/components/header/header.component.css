@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+}
+
+.header {
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	padding-right: 16px;
+	justify-content: space-between;
+	background: #fff;
+}
+
+.header > .title {
+	font-size: 32px;
+	color: #46a5f8;
+	display: flex;
+	align-items: center;
+	font-family: Raleway,sans-serif;
+	cursor: pointer;
+	font-weight: bold;
+	background: linear-gradient(to right,#e1e1e1cc,#f8f8f842);
+	width: 250px;
+	padding-left: 32px;
+}
+
+.header .buttons-setting {
+    display: flex;
+}
+
+.header .fa.fa-cog,
+.header .fa.fa-user {
+    border: none;
+    background-color: inherit;
+    color: #46a5f8;
+    font-size: 20px;
+    cursor: pointer;
+    width: 60px;
+    border-bottom: 2px solid #fff;
+}
+
+.header .fa.fa-star-o {
+	background-color: #fff;
+    border: none;
+    color: #46a5f8;
+    font-size: 20px;
+    cursor: pointer;
+    width: 60px;
+}
+
+.header .fa.fa-cog:hover,
+.header .fa.fa-user:hover {
+    background-color: #eaf5ff;
+    color: #3f8dd1;
+    border-bottom: 2px solid #3f8dd1;
+}
+
+.header .fa.fa-cog.active,
+.header .fa.fa-user.active  {
+    background-color: #eaf5ff;
+    color: #3476af;
+    border-bottom: 2px solid #3476af;
+}
+
+.header .fa.fa-star-o:hover {
+    background-color: #fff;
+    color: #3f8dd1;
+}
+
+.header .fa.fa-star-o.active  {
+    background-color: #fff;
+    color: #3476af;
+}

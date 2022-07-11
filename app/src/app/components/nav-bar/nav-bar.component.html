@@ -1,0 +1,45 @@
+<div class="nav-bar">
+    <div class="menu-list">
+
+        <button class="button-full all" type="button">
+            {{all}}
+        </button>
+
+        <div class="button-group">
+
+            <div class="group1">
+                <button class="button-small folder" type="button">
+                    <i class="fa fa-folder-o" aria-hidden="true"></i>
+                    {{folder}}
+                </button>
+                <button class="button-small image" type="button">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    {{imagen}}
+                </button>
+            </div>
+
+            <div class="group2">
+                <button class="button-small plano" type="button">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    {{text1}}
+                </button>
+                <button class="button-small rico" type="button">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    {{text2}}
+                </button>
+            </div>
+
+        </div>
+
+        <button class="button-full eliminar" type="button" [ngClass]="{'active': activeTrash, '': !activeTrash}" (click)="isActiveTrash()" routerLink="/delete" routerLinkActive="active">
+            {{trash}}
+        </button>
+
+    </div>
+    <div class="button">
+        <button type="button">
+           {{upload}}
+           <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+table {
+	display: flex;
+	flex-direction: column;
+	padding: 16px 8px;
+	background: #f7f7f7;
+	border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+thead {
+	background: #f7f7f7;
+	border-radius: 8px;
+	color: #000;
+	margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+thead tr {
+	height: 48px;
+    cursor: default;
+}
+
+tbody {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+tbody tr {
+	height: 48px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #e5edfa;
+    border-radius: 8px;
+}
+
+tbody tr:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+tbody tr:hover {
+    background:#d7ecfc;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+thead .col2, 
+thead .col3, 
+thead .col4 {
+    padding: 10px 0;
+}
+	
+thead .col1 {
+    width: 48px;
+    padding: 12px 12px 12px 1px;
+}
+
+tbody .col1 {
+    width: 48px;
+    padding: 12px 0px 12px 14px;
+}
+
+thead .col2, 
+tbody .col2 {
+	width: 575px;
+	text-align: left;
+	font-family: Raleway,sans-serif;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 575px;
+}
+
+thead .col3,
+tbody .col3 {
+    width: 100px;
+    text-align: left;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 100px;
+}
+
+tbody .col3 {
+    text-transform: lowercase;
+}
+
+tbody .col3 {
+    text-transform: uppercase;
+}
+
+thead .col4,
+tbody .col4 {
+    width: 132px;
+    text-align: left;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 132px;
+}
+
+thead .col2:hover:after,
+thead .col3:hover:after {
+	content: "\f07d";
+    font: normal normal normal 14px/1 FontAwesome;
+	font-size: 16px;
+	color: #000;
+    margin-left: 8px;;
+}
+
+thead .col2:hover,
+thead .col3:hover {
+    cursor: pointer;
+}
+
+tbody .col2,
+tbody .col3,
+tbody .col4 {
+	padding: 10px 0;
+}
+
+thead .col5,
+tbody .col5 {
+    width: 86px;
+    text-align: left;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 86px;
+}
+
+tbody .col5 {
+    text-align: center;
+}
+
+tbody .col5 .fa.fa-ellipsis-v {
+    cursor: pointer;
+}
+
+tbody .col2, 
+tbody .col3, 
+tbody .col4 {
+    cursor: default;
+}
